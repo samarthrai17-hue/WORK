@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samarth Rai | Digital Portfolio</title>
+  <meta name="description" content="Digital portfolio of Samarth Rai, BBA (Hons) student at TAPMI Bengaluru.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <a class="brand" href="#top">Samarth Rai</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero: graph paper with the profit curve from my break-even project -->
+    <section id="top" class="hero">
+      <div class="hero-inner">
+        <p class="hero-role">BBA (Hons), TAPMI Bengaluru</p>
+        <h1>Samarth Rai</h1>
+        <p class="hero-line">A maths-first business student who likes work that can be checked, with a number at the end of it.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+          <a class="btn btn-ghost" href="#about">About me</a>
+        </div>
+      </div>
+      <figure class="hero-plot">
+        <svg viewBox="0 0 420 300" role="img" aria-labelledby="plot-title">
+          <title id="plot-title">Profit curve from my break-even project: profit turns positive at 500 orders, peaks at 22,500 rupees at 2,000 orders and falls back to zero at 3,500 orders.</title>
+          <line x1="20" y1="170" x2="400" y2="170" class="axis"/>
+          <line x1="20" y1="10" x2="20" y2="285" class="axis"/>
+          <path d="M20 271 Q205 -191 390 271" class="curve"/>
+          <circle cx="66" cy="170" r="6" class="point"/>
+          <circle cx="344" cy="170" r="6" class="point"/>
+          <circle cx="205" cy="40" r="6" class="peak"/>
+          <text x="66" y="192" class="plot-label" text-anchor="middle">500</text>
+          <text x="344" y="192" class="plot-label" text-anchor="middle">3,500</text>
+          <text x="205" y="28" class="plot-label" text-anchor="middle">₹22,500</text>
+          <text x="395" y="160" class="plot-label" text-anchor="end">orders per month</text>
+        </svg>
+        <figcaption>Profit model for a Lucknow cloud kitchen, from my business maths project.</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="two-col">
+        <div class="prose">
+          <p>I'm Samarth, 18, from a defence family; my father is in the Indian Air Force. I'm in my first semester of BBA (Hons) at TAPMI, Bengaluru, and I'm also doing a BBA DBE at IIMB.</p>
+          <p>Maths is my main area of interest. I chose business over engineering to avoid coding-intensive work, and I'm building toward a role where my output matters more than my hours.</p>
+        </div>
+        <aside class="fact-box">
+          <h3>At a glance</h3>
+          <dl>
+            <dt>Studying</dt><dd>BBA (Hons), TAPMI</dd>
+            <dt>Also doing</dt><dd>BBA DBE, IIMB</dd>
+            <dt>Strong in</dt><dd>Maths and SQL</dd>
+            <dt>Next step</dt><dd>MBA after the BBA</dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section id="education" class="section section-tint">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <h3>BBA (Hons), TAPMI Bengaluru</h3>
+          <p class="meta">Semester 1, ongoing</p>
+          <p>My main degree, where the projects below were done.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>BBA DBE, IIMB</h3>
+          <p class="meta">Semester 1, ongoing</p>
+          <p>Studied alongside BBA (Hons) for exposure and top-tier learning.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>Data analytics course, Coursera</h3>
+          <p class="meta">Ongoing</p>
+          <p>Building a formal base to go with my SQL.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>Classes 10 to 12 (PCM)</h3>
+          <p class="meta">Physics, Chemistry and Mathematics</p>
+          <p>Where I found that maths is the subject I enjoy most.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="goals" class="section section-navy">
+      <h2>Where I'm headed</h2>
+      <ul class="goal-list">
+        <li>Enter a math-intensive business domain such as quantitative finance.</li>
+        <li>Work in an output-based role rather than a time-based 9-to-5 role.</li>
+        <li>Take up gigs and internships to learn, grow and build a network.</li>
+        <li>Pursue an MBA after completing the 3-year BBA.</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills and strengths</h2>
+      <h3 class="sub-head">Skills</h3>
+      <ul class="card-grid">
+        <li class="card"><h4>Maths and analysis</h4><p>Mathematical and analytical ability.</p></li>
+        <li class="card"><h4>SQL</h4><p>Strong working knowledge.</p></li>
+        <li class="card"><h4>Data analytics</h4><p>In progress, through my Coursera course.</p></li>
+        <li class="card"><h4>Research and presenting</h4><p>Research, report writing and presentation.</p></li>
+        <li class="card"><h4>Programming</h4><p>Learning other languages in line with my future goals.</p></li>
+      </ul>
+      <h3 class="sub-head">Strengths</h3>
+      <ul class="card-grid strengths">
+        <li class="card card-accent"><h4>Optimistic</h4><p>I focus on the positives and work to fix the flaws.</p></li>
+        <li class="card card-accent"><h4>Calm and considerate</h4><p>Composed under pressure and mindful of other people's emotions.</p></li>
+        <li class="card card-accent"><h4>Resilient</h4><p>I narrowly missed a few entrance exam cut-offs (IIM Rohtak IPM by 5 marks, BITS MSc Economics by 9 marks) and continued undeterred.</p></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section section-tint">
+      <h2>Projects</h2>
+
+      <article class="project" id="llr">
+        <div class="project-text">
+          <h3>LLR: build the persona</h3>
+          <p class="tags">Research, storytelling, public speaking</p>
+          <p>Rebranding the persona of a business icon. My icon was Nikhil Kamath, co-founder of Zerodha and True Beacon.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Researched the icon and prepared the information sheet introducing him to the audience.</li>
+            <li>Delivered the introduction of the icon during the presentation to engage the audience.</li>
+            <li>Presented the controversy around the icon's podcast on the alcohol industry in India.</li>
+          </ul>
+        </div>
+        <div class="project-evidence">
+          <figure><a href="images/llr-info-sheet.png" target="_blank" rel="noopener"><img src="images/llr-info-sheet.png" alt="Information sheet on Nikhil Kamath" loading="lazy"></a><figcaption>Information sheet on the icon</figcaption></figure>
+          <figure><a href="images/llr-podcast-slide.png" target="_blank" rel="noopener"><img src="images/llr-podcast-slide.png" alt="Presentation slide on the alcohol-industry podcast controversy" loading="lazy"></a><figcaption>Presentation slide: podcast controversy</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="project" id="maths">
+        <div class="project-text">
+          <h3>Business maths: break-even analysis</h3>
+          <p class="tags">Quadratic modelling, report writing, Canva</p>
+          <p>Break-even analysis of Asli Zaikaa, an actual cloud kitchen in Lucknow, using quadratic equations.</p>
+          <ul class="figures">
+            <li><strong>500</strong><span>orders: first break-even</span></li>
+            <li><strong>3,500</strong><span>orders: second break-even</span></li>
+            <li><strong>₹22,500</strong><span>peak profit at 2,000 orders</span></li>
+          </ul>
+          <h4>What I did</h4>
+          <ul>
+            <li>Prepared the entire report on the cloud kitchen.</li>
+            <li>Modelled profit with a quadratic function and found two break-even points, with a peak profit at 2,000 orders.</li>
+            <li>Created the presentation using Canva for editing and Claude for the base slides, from my own text and prompts.</li>
+          </ul>
+        </div>
+        <div class="project-evidence">
+          <figure><a href="images/maths-title.png" target="_blank" rel="noopener"><img src="images/maths-title.png" alt="Title slide of the break-even report" loading="lazy"></a><figcaption>Report title slide</figcaption></figure>
+          <figure><a href="images/maths-scenario-table.png" target="_blank" rel="noopener"><img src="images/maths-scenario-table.png" alt="Report page with the scenario table" loading="lazy"></a><figcaption>Report: scenario table</figcaption></figure>
+          <figure><a href="images/maths-graph.png" target="_blank" rel="noopener"><img src="images/maths-graph.png" alt="Report page with the profit graph and recommendations" loading="lazy"></a><figcaption>Report: graph and recommendations</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="project" id="accounts">
+        <div class="project-text">
+          <h3>Accounts: ledger analysis</h3>
+          <p class="tags">Ledger analysis, journal entries</p>
+          <p>Accounts project for FY 2025–26 on Bharat Petroleum Corporation Limited.</p>
+          <ul class="figures">
+            <li><strong>₹6,233.56 cr</strong><span>cash and bank overdraft at close</span></li>
+            <li><strong>₹40,422.96 cr</strong><span>receivables after a ₹35,000 crore dealer credit sale</span></li>
+          </ul>
+          <h4>What I did</h4>
+          <ul>
+            <li>Studied the ledger accounts.</li>
+            <li>Worked on the journal entries.</li>
+            <li>Analysed the results from the ledgers.</li>
+          </ul>
+        </div>
+        <div class="project-evidence">
+          <figure><a href="images/accounts-cash-ledger.png" target="_blank" rel="noopener"><img src="images/accounts-cash-ledger.png" alt="Ledger of the cash and bank account" loading="lazy"></a><figcaption>Ledger: cash and bank account</figcaption></figure>
+          <figure><a href="images/accounts-receivables-ledger.png" target="_blank" rel="noopener"><img src="images/accounts-receivables-ledger.png" alt="Ledgers of trade receivables, trade payables and PPE" loading="lazy"></a><figcaption>Ledger: receivables, payables and PPE</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="project" id="tlm">
+        <div class="project-text">
+          <h3>TLM: market and news analysis</h3>
+          <p class="tags">News analysis, source verification</p>
+          <p>India Becomes Apple's Factory: how US–China tensions made India the world's second-largest iPhone manufacturer.</p>
+          <h4>What I did</h4>
+          <ul>
+            <li>Read the Al Jazeera report on the case to understand the issue.</li>
+            <li>Cross-checked the facts against other official news sources.</li>
+          </ul>
+        </div>
+        <div class="project-evidence">
+          <figure><a href="images/tlm-apple-title.png" target="_blank" rel="noopener"><img src="images/tlm-apple-title.png" alt="Title slide: India Becomes Apple's Factory" loading="lazy"></a><figcaption>Presentation slide on the case</figcaption></figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="interests" class="section">
+      <h2>Outside the classroom</h2>
+      <div class="interest-groups">
+        <div>
+          <h3>String instruments</h3>
+          <ul class="chips"><li>Ukulele</li><li>Acoustic guitar</li><li>Electric guitar</li></ul>
+        </div>
+        <div>
+          <h3>Racket sports</h3>
+          <ul class="chips"><li>Badminton</li><li>Squash</li><li>Table tennis</li></ul>
+        </div>
+        <div>
+          <h3>Water</h3>
+          <ul class="chips"><li>Swimming</li></ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Samarth Rai | BBA (Hons), TAPMI Bengaluru | Digital portfolio</p>
+  </footer>
+
+</body>
+</html>
